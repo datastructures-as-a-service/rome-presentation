@@ -1,0 +1,58 @@
+\begin{frame}[fragile]
+    \frametitle{outline solution}
+
+    How to solve:
+    \begin{enumerate}
+    \note<1>[item]{First build a system that can version control data structures}
+    \item version control all changes to the data
+    \note<1>[item]{Then to allow for easy collaboration and to avoid the uncessary duplication of data, build a cloud service providing data structures that are version controlled}
+    \item build a cloud server to enable collaboration on the data structures, and to avoid unnecessary data duplication
+    \note<1>[item]{Make it a space efficient, fast, real-time, inter-operable and easy-to-use system}
+    \item make it space efficient, fast, real-time, inter-operable and easy-to-use
+    \note<1>[item]{Force users to use it}
+    \item force users to use it :)
+    \end{enumerate}
+    \note<1>{So effectively, what we want is: }
+    
+    \centering
+    \begin{tikzpicture}
+        \tikzstyle{obj}=[fill=accentcolor, draw=none, rectangle, minimum width=2cm,minimum height=0.6cm];
+        \tikzstyle{sobj}=[obj, minimum width=0.8cm];
+        \tikzstyle{link}=[color=accentcolor];
+    	\begin{scope}[>=stealth]
+        
+        
+        \pause
+        \note<2>{Use the version control from Git and provide a platform like github..z}
+        \node(github) at (0,0) {\includegraphics[width=2cm]{images/github.png}};
+        \node(add2) [right = 0.01cm of github] {\Huge +};
+        
+        \pause
+        \note<3>{While adding the real-time collaboration capabalities and central storage of google drive...}
+        \node(drive) [right = 0.8cm of github] {\includegraphics[width=2cm]{images/drive.png}};
+        \node(add) [right = 0cm of drive] {\Huge +};
+        
+        \pause
+        \note<4>{And combine all of this with data structures}
+        \node(start) [above right = -0.8cm and 1.3cm of drive, obj]{};
+        
+        \node(n1) [below = 0.5cm of start, sobj]{};
+        \node(n2) [right = 0.2cm of n1, sobj]{};
+        \node(n3) [left = 0.2cm of n1, sobj]{};
+        
+        \draw[-,link] (start) -- (n1);
+        \draw[-,link] (start) -- (n2);
+        \draw[-,link] (start) -- (n3);
+        
+        \node(equals) [right = 3.8cm of drive] {\Huge =};
+        
+        \pause
+        \note<5>{Which naturally gives us DSaaS. Easy, no? Before we can build such a system we need a little bit of background.}
+        \node(dsaas) [below right = 0cm and 0.4cm of equals]{\Large \color{black}{DSaaS}};
+        \node(dsaasLogo) [above = -0.7cm of dsaas]{\includegraphics[width=0.25\textwidth]{images/panda_logo.png}};
+        
+        \end{scope}
+    \end{tikzpicture}
+
+  
+\end{frame}

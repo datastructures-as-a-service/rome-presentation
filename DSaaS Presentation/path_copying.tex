@@ -1,0 +1,52 @@
+\begin{frame}{path-copying}
+	\centering
+	Achieve full persistence using a technique called \emph{path-copying}
+	% ~\cite{driscoll1986making}
+
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+		
+		\tikzstyle{thickarrow}=[line width=1mm,-triangle 45,postaction={draw, line width=3mm, shorten >=4mm, -}]
+		\tikzstyle{hl}=[color=accentcolor]
+		\tikzstyle{nn}=[circle, fill, style={fill=accentcolor,text=white}]
+		\tikzstyle{ns}=[nn, style={fill=grey}]
+
+		\begin{scope}[>=stealth']
+
+		  
+		\node (a2) at (2.5,-1) [circle,draw]{$b$};
+		\node (b2) at (2.5,-2) [circle,draw]{$d$};
+		\node (d2) at (1.5, -2) [circle,draw]{$a$};
+		\node<1,6->(r2) at (3,0) [circle,draw]{$r$};
+		\node<1-2,5->(c2) at (3.5,-1) [circle,draw]{$c$};
+		\node(e2) at (3.5, -2) [circle,draw]{$e$};
+
+		\node<2-5>(r2) at (3,0) [circle,draw, hl]{$r$};
+		\node<3-4>(c2) at (3.5,-1) [circle,draw, hl]{$c$};
+
+		\draw[->] (r2) -- (a2);
+		\draw[->] (a2) -- (b2);
+		\draw[->] (a2) -- (d2);
+		\draw[->] (c2) -- (e2);
+		
+		\draw<1-2, 6->[->] (r2) -- (c2);
+
+		\draw<3-5>[->, hl] (r2) -- (c2);
+
+		\visible<4->{\node(f) at (4.5, -2) [nn]{$f$};}
+		\draw<4>[->, hl] (c2) -- (f);
+
+		\visible<5->{\node(c3) at (4.5, -1) [nn]{$c'$};}
+		\draw<5->[->, hl] (c3) -- (f);
+		\draw<5->[->, hl] (c3) -- (e2);
+		\draw<5>[->, hl] (r2) -- (c3);
+
+		\visible<6->{\node(r3) at (4, 0) [nn]{$r'$};}
+		\draw<6->[->, hl] (r3) -- (c3);
+		\draw<6->[->, hl] (r3) -- (a2);
+
+		\end{scope}
+		\end{tikzpicture}
+		\end{figure}
+\end{frame}

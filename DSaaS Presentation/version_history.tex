@@ -1,0 +1,28 @@
+\begin{frame}[fragile]
+	\frametitle{Version History}
+  An implementation of a graph recording the relationships between different versions.
+  Used for navigation of the persistent data structures.
+
+  \begin{center}
+    \begin{tikzpicture}
+      \tikzstyle{obj}=[draw, circle];
+
+      \node (v1) at (0,0)[obj]{$v_{1}$};
+      \node (v2) [above right=of v1, obj]{$v_{2}$};
+      \node (v3) [below right=of v1, obj]{$v_{3}$};
+      \node (v4) [right=of v3, obj]{$v_{4}$};
+      \node (v5) [right=of v1, obj]{$v_{5}$};
+      \node (v6) [right=of v5, obj]{$v_{6}$};
+
+      \draw [<->] (v1) -- (v2);
+      \draw [->] (v1) -- (v3);
+      \draw [->] (v1) -- (v5);
+
+      \draw [->] (v2) -- (v6);
+      \draw [->] (v5) -- (v6);
+
+      \draw [->] (v3) -- (v4);
+
+    \end{tikzpicture}
+  \end{center}
+\end{frame}

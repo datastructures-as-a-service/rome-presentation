@@ -1,0 +1,163 @@
+\documentclass[10pt]{beamer}
+
+% \usepackage{fontspec}
+% \setmainfont[Path = fonts/,
+%     UprightFont = *-Regular,
+%     ItalicFont = *-Italic
+%  ]
+% {FiraSans}
+\usetheme[progressbar=frametitle, everytitleformat=uppercase,
+plaintitleformat=uppercase, block=transparent]{m}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{adjustbox}
+\usepackage[backend=biber]{biblatex}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usetikzlibrary{shapes,automata,positioning,arrows,calc}
+\include{config}
+\usepackage{array}
+\usepackage{varwidth}
+
+\setbeamercolor{progressbar}{fg=accentcolor, bg=accentcolor!40!black}
+% \usepackage{tabularx}
+% \usepackage{pgfpages}
+% \setbeameroption{show notes}
+% \setbeameroption{show notes on second screen}
+
+% \usemintedstyle{trac}
+
+% \setbeamercolor{normal text}{fg=white, bg=black}
+% \setbeamercolor{alerted text}{fg=green, bg=black}
+\colorlet{mDarkTeal}{primary}
+% \definecolor{mLightBrown}{HTML}{F7E300}
+% \definecolor{mDarkBrown}{HTML}{A69B29}
+% \definecolor{mLightGreen}{HTML}{F7E300}
+
+% \definecolor{mLightGolden}{HTML}{F7E300}
+% \definecolor{mDarkGolden}{HTML}{A69B29}
+
+% \setbeamercolor{progress bar}{fg=mLightGolden, bg=mDarkGolden}
+
+\title{DSaaS}
+\subtitle{A Cloud Service for Persistent Data Structures}
+\date{\today}
+\author{P. B. le Roux, S. Kroon and W. Bester}
+\institute{Stellenbosch University}
+
+\begin{document}
+
+\newcommand{\architectureOverview}[0]{
+    \begin{tikzpicture}
+
+    \tikzstyle{obj}=[draw, rectangle, minimum height=1cm, minimum width=2.2cm];
+    \tikzstyle{bigobj}=[draw, rectangle, minimum height=2.5cm, minimum width=3.5cm];
+    \tikzstyle{db}=[cylinder, shape border rotate=90, draw,minimum height=2cm,minimum width=2.6cm];
+
+    \begin{scope}[>=stealth]
+      \node (serverContainer) at (0,0) [draw, rectangle, minimum height=6.5cm, minimum width=7.2cm]{};
+      \node [above=-0.7cm of serverContainer]{API Service (NodeJS)};
+
+      \node (db1) [right=0.4cm of serverContainer, db]{};
+      \node (db1description) [above=-1cm of db1]{Key-Value};
+      \node (db1description2) [below=0cm of db1description]{Database};
+      \node (db2) [left=0.4cm of serverContainer, db]{};
+      \node (db2description) [above=-1cm of db2]{Document};
+      \node (db2description2) [below=0cm of db2description]{Database};
+
+
+      \node (c) [above=-3.6cm of serverContainer]{};
+      \node (apiContainer) [above left = -2.73cm and 0.65cm of c, draw, rectangle, minimum height=5.4cm, minimum width=2.6cm]{};
+      \node [above=-0.5cm of apiContainer]{API Module};
+
+      \node (general) [above=-1.6cm of apiContainer, obj]{General};
+      \node (user) [below=0.2cm of general, obj]{User};
+      \node (map) [below=0.2cm of user, obj]{Map};
+      \node (graph) [below=0.2cm of map, obj]{Graph};
+
+      \node (c2) [above=-4cm of serverContainer]{};
+      \node (dsmodule) [right=-0.6cm of c2, draw, rectangle, minimum height=4.4cm, minimum width=3.8cm]{};
+      \node [above=-0.5cm of dsmodule]{Data Structure Module};
+
+      \node (dagstore) [above=-1.6cm of dsmodule, obj]{Version History};
+      \node (vtstore) [below=0.32cm of dagstore, obj]{Versioned Trie};
+      \node (graphstore) [below=0.32cm of vtstore, obj]{Versioned Graph};
+
+
+      \draw [->] (general) -- (db2);
+      \draw [->] (general) -- (dsmodule);
+      \draw [->] (user) -- (db2);
+      \draw [->] (map) -- (db2);
+      \draw [->] (graph) -- (db2);
+      \draw [->] (db2) -- (general);
+      \draw [->] (db2) -- (user);
+      \draw [->] (db2) -- (map);
+      \draw [->] (db2) -- (graph);
+
+      \draw[->] (dagstore) -- (db1);
+      \draw[->] (vtstore) -- (db1);
+      \draw[->] (db1) -- (vtstore);
+      \draw[->] (db1) -- (dagstore);
+      \draw[->] (vtstore) -- (dagstore);
+      \draw[->] (graphstore) -- (vtstore);
+      \draw[->] (map) -- (vtstore);
+      \draw[->] (graph) -- (graphstore);
+
+    \end{scope}
+   \end{tikzpicture}
+}
+
+\section{DSaaS}
+
+\input{problem}
+\input{problem_definition}
+
+\maketitle
+
+\input{use_cases}
+\section{Background}
+% Background
+\input{version_control}
+\input{path_copying}
+\input{hamt}
+% Quick reference to Requirements
+
+\section{Development}
+% Discuss design and implementation
+\input{architecture_overview}
+% \begin{frame}[fragile]
+% 	\frametitle{Browser Application}
+% 	\centering
+% 		\begin{tabular}{c c}
+% 		\includegraphics[width=0.47\textwidth]{images/workspace.png} &
+% 		\includegraphics[width=0.47\textwidth]{images/map.png} \\
+% 		\includegraphics[width=0.47\textwidth]{images/graph.png} &
+% 		\includegraphics[width=0.47\textwidth]{images/adding-kv-pairs.png}
+% 	\end{tabular}
+% \end{frame}
+\input{browser_application}
+\input{language_binding}
+\input{back_end}
+\input{versioned_trie}
+% \input{version_history}
+
+\section{Evaluation}
+\input{evaluation}
+\input{speed}
+\input{dat_comparison}
+
+\section{Conclusion}
+% \input{features}
+\input{conclusion}
+
+\printbibliography
+
+\begin{frame}
+\centering\Huge
+	Questions? \\
+	\includegraphics[width=0.4\textwidth]{images/panda_logo.png}
+\end{frame}
+
+\end{document}

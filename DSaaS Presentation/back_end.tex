@@ -1,0 +1,70 @@
+\begin{frame}[fragile]
+	\frametitle{Back End}
+	 \newcommand{\backEnd}[0] {
+      \begin{tikzpicture}
+
+      \tikzstyle{obj}=[draw, rectangle, minimum height=1cm, minimum width=2.2cm];
+      \tikzstyle{bigobj}=[draw, rectangle, minimum height=2.5cm, minimum width=3.5cm];
+      \tikzstyle{db}=[cylinder, shape border rotate=90, draw,minimum height=2cm,minimum width=2.6cm];
+
+      \begin{scope}[>=stealth]
+        \node (serverContainer) at (0,0) [draw, rectangle, minimum height=6.5cm, minimum width=7.2cm]{};
+        \node [above=-0.7cm of serverContainer]{API Service (NodeJS)};
+
+        \node (db1) [right=0.4cm of serverContainer, db]{};
+        \node (db1description) [above=-1cm of db1]{Key-Value};
+        \node (db1description2) [below=0cm of db1description]{Database};
+        \node (db1logo) [above=0cm of db1]{\includegraphics[width=0.12\textwidth]{images/leveldb.png}};
+
+        \node (db2) [left=0.4cm of serverContainer, db]{};
+        \node (db2description) [above=-1cm of db2]{Document};
+        \node (db2description2) [below=0cm of db2description]{Database};
+        \node (db2logo) [above=0cm of db2]{\includegraphics[width=0.15\textwidth]{images/mongodb.png}};
+
+
+        \node (c) [above=-3.6cm of serverContainer]{};
+        \node (apiContainer) [above left = -2.73cm and 0.65cm of c, draw, rectangle, minimum height=5.4cm, minimum width=2.6cm]{};
+        \node [above=-0.5cm of apiContainer]{API Module};
+
+        \node (general) [above=-1.6cm of apiContainer, obj]{General};
+        \node (user) [below=0.2cm of general, obj]{User};
+        \node (map) [below=0.2cm of user, obj]{Map};
+        \node (graph) [below=0.2cm of map, obj]{Graph};
+
+        \node (c2) [above=-4cm of serverContainer]{};
+        \node (dsmodule) [right=-0.6cm of c2, draw, rectangle, minimum height=4.4cm, minimum width=3.8cm]{};
+        \node [above=-0.5cm of dsmodule]{Data Structure Module};
+
+        \node (dagstore) [above=-1.6cm of dsmodule, obj]{Version History};
+        \node (vtstore) [below=0.32cm of dagstore, obj]{Versioned Trie};
+        \node (graphstore) [below=0.32cm of vtstore, obj]{Versioned Graph};
+
+
+        \draw [->] (general) -- (db2);
+        \draw [->] (general) -- (dsmodule);
+        \draw [->] (user) -- (db2);
+        \draw [->] (map) -- (db2);
+        \draw [->] (graph) -- (db2);
+        \draw [->] (db2) -- (general);
+        \draw [->] (db2) -- (user);
+        \draw [->] (db2) -- (map);
+        \draw [->] (db2) -- (graph);
+
+        \draw[->] (dagstore) -- (db1);
+        \draw[->] (vtstore) -- (db1);
+        \draw[->] (db1) -- (vtstore);
+        \draw[->] (db1) -- (dagstore);
+        \draw[->] (vtstore) -- (dagstore);
+        \draw[->] (graphstore) -- (vtstore);
+        \draw[->] (map) -- (vtstore);
+        \draw[->] (graph) -- (graphstore);
+
+      \end{scope}
+     \end{tikzpicture}
+   }
+
+   \centering
+   \begin{tikzpicture}
+    \node (api_service) at (0,0) {\resizebox{\linewidth}{!}{\backEnd}};
+   \end{tikzpicture}
+\end{frame}

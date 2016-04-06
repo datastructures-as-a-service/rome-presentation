@@ -1,0 +1,54 @@
+\begin{frame}[fragile]
+	\frametitle{Architecture Overview}
+
+\newcommand{\staticServer}[0]{
+	\begin{tikzpicture}
+
+	\tikzstyle{stdrect}=[draw, rectangle, inner sep = 0.25cm];
+    \begin{scope}[>=stealth]
+
+    	\node (nginx) at (0,0) []{Static Service (NGINX)};
+    	\node (browser) [below = 0.25cm of nginx, stdrect]{Browser Application};
+    	\node (lang_binding) [below = 0.25cm of browser, stdrect]{Language Bindings};
+
+    \end{scope}
+    \end{tikzpicture}
+}
+
+\newcommand{\TPuser}[0]{
+	\begin{tikzpicture}
+
+	\tikzstyle{stdrect}=[draw, rectangle, inner sep = 0.5cm, minimum width = 6cm];
+    \begin{scope}[>=stealth]
+
+    	\node (user_s) at (0,0) []{\Large Client};
+    	\node (browser_screen) [below = 0.4cm of user_s, stdrect]{Downloaded Browser Application};
+    	\node (lang_bindings_screen) [below = 0.4cm of browser_screen, stdrect]{Java Program via Language Binding};
+
+    \end{scope}
+    \end{tikzpicture}
+}
+
+\centering
+\begin{tikzpicture}
+	\begin{scope}[>=stealth]
+		\node (center) at (0,0){};
+		\node (leUser) [left = of center, draw, rectangle] {\resizebox{0.25\linewidth}{!}{\TPuser}};
+
+    \node (dsaas) [right = 1.5cm of center]{};
+    \node (static_server) [above right = -0.2cm and 0cm of dsaas, draw, rectangle] {\resizebox{0.2\linewidth}{!}{\staticServer}};
+		\draw[->] (static_server) -- ++(-4,0) -- (leUser);
+    \node (downloads) [above left = -0.8cm and 0.6cm of static_server] {HTTP};
+
+    \pause
+
+    \node (api_service) [below right = 0.2cm and -1.9cm of dsaas] {\resizebox{0.7\linewidth}{!}{\architectureOverview}};
+    \node (as_coor) [above left = -0.8cm and -2.6cm of api_service, minimum width = 0.4cm]{};
+    \draw[->] (as_coor) -- ++(-3,0) -- (leUser);
+    \draw[<-] (as_coor) -- ++(-3,0) -- (leUser);
+
+    \node (http) [below = 1.3cm of downloads] {HTTP};
+    \node (web_sockets) [below = 0.05cm of http] {Web-Sockets};
+	\end{scope}
+\end{tikzpicture}
+\end{frame}

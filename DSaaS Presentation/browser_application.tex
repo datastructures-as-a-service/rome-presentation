@@ -1,0 +1,34 @@
+\begin{frame}[fragile]
+	\frametitle{Adapted Flux Architecture}
+	\note{The browser application uses an adapted Flux architecture, and ReactJS for rendering the HTML views.
+	The Flux architecture is very straightforward, the idea is to have different units, where each unit receive information, processes the information and passes it on to the next one.
+	Therefore it is a one-way data-flow of information and very easy to debug once things go wrong.}
+
+\centering
+\begin{tikzpicture}
+\tikzstyle{obj}=[draw, rectangle, minimum height=1cm, minimum width=1.8cm];
+\begin{scope}[>=stealth]
+  \node (dispatcher) at (-3.2,-2) {Emits Data};
+  \node (action) at (1,-2) [obj]{Action Dispatcher};
+  \node (generate) [above=0.5cm of action]{Generates Action};
+  \node (views) [above=0.5cm of generate, obj]{View};
+  \node (inform) [left=0.5cm of views]{Notifies};
+  \node (stores) [left=0.5cm of inform, obj]{Store};
+  \node (data) [right=0.5cm of action]{Data};
+  \node (webutils) [right=0.5cm of data, obj]{Web Utilities};
+  \node (data2) [above=0.5cm of webutils]{Data};
+  \node (api) [above=0.5cm of data2, obj]{API};
+
+  \draw[->] (action) -- (dispatcher) -- (stores);
+  \draw (stores) -- (inform);
+  \draw[->] (inform) -- (views);
+  \draw (views) -- (generate);
+  \draw[->] (generate) -- (action);
+  \draw[->] (webutils) -- (data) -- (action);
+  \draw[->] (action) -- (data) -- (webutils);
+  \draw[->] (api) -- (data2) -- (webutils);
+  \draw[->] (webutils) -- (data2) -- (api);
+\end{scope}
+\end{tikzpicture}
+
+\end{frame}
