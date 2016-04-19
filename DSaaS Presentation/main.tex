@@ -1,4 +1,5 @@
 \documentclass[10pt]{beamer}
+\usepackage{datetime}
 
 % \usepackage{fontspec}
 % \setmainfont[Path = fonts/,
@@ -43,9 +44,10 @@ plaintitleformat=uppercase, block=transparent]{m}
 
 \title{DSaaS}
 \subtitle{A Cloud Service for Persistent Data Structures}
-\date{\today}
-\author{P. B. le Roux, S. Kroon and W. Bester}
-\institute{Stellenbosch University}
+\newdate{date}{24}{04}{2016}
+\date{\displaydate{date}}
+\author{Pierre le Roux, Steve Kroon and Willem Bester}
+\institute{Stellenbosch University \\ \url{http://cs.sun.ac.za/~kroon/dsaas}}
 
 \begin{document}
 
@@ -111,36 +113,37 @@ plaintitleformat=uppercase, block=transparent]{m}
 
 \section{DSaaS}
 
-\input{problem}
-\input{problem_definition}
-
 \maketitle
 
-\input{use_cases}
+\input{problem}
+\input{problem_definition}
+\input{overview}
+\input{example}
+
 \section{Background}
 % Background
 \input{version_control}
 \input{path_copying}
-\input{hamt}
 % Quick reference to Requirements
 
 \section{Development}
 % Discuss design and implementation
 \input{architecture_overview}
-% \begin{frame}[fragile]
-% 	\frametitle{Browser Application}
-% 	\centering
-% 		\begin{tabular}{c c}
-% 		\includegraphics[width=0.47\textwidth]{images/workspace.png} &
-% 		\includegraphics[width=0.47\textwidth]{images/map.png} \\
-% 		\includegraphics[width=0.47\textwidth]{images/graph.png} &
-% 		\includegraphics[width=0.47\textwidth]{images/adding-kv-pairs.png}
-% 	\end{tabular}
-% \end{frame}
-\input{browser_application}
-\input{language_binding}
+\begin{frame}[fragile]
+	\frametitle{Browser Application}
+	\centering
+		\begin{tabular}{c c}
+		\includegraphics[width=0.47\textwidth]{images/workspace.png} &
+		\includegraphics[width=0.47\textwidth]{images/map.png} \\
+		\includegraphics[width=0.47\textwidth]{images/graph.png} &
+		\includegraphics[width=0.47\textwidth]{images/edit.png}
+	\end{tabular}
+\end{frame}
+% \input{browser_application}
+% \input{language_binding}
 \input{back_end}
 \input{versioned_trie}
+\input{hamt}
 % \input{version_history}
 
 \section{Evaluation}

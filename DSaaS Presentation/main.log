@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.30)  6 APR 2016 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.30)  19 APR 2016 08:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,8 +706,9 @@ Package: beamerinnerthemedefault 2013/10/15  (rcs-revision 65cb471f9634)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/outer/beamerouterth
 emedefault.sty
 Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
-))) (./beamerthemem.sty
-Package: beamerthemem 2015/06/12 Metropolis Beamer theme
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2013/09/10 v2.59 Date Time Package
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
@@ -718,28 +719,81 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 )
 \etb@tempcnta=\count154
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2013/08/17 v2.03
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2012/09/28
+\fc@digit@counter=\count155
+))
+\c@padzeroesN=\count156
+\fc@tmpcatcode=\count157
+\@DT@modctr=\count158
+\@ordinalctr=\count159
+\@orgargctr=\count160
+\@strctr=\count161
+\@tmpstrctr=\count162
+\@DT@loopN=\count163
+\@DT@X=\count164
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english.def 2013/08/17
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count165
+\@month=\count166
+\@year=\count167
+\c@HOUR=\count168
+\c@HOURXII=\count169
+\c@MINUTE=\count170
+\c@TOHOUR=\count171
+\c@TOMINUTE=\count172
+\c@SECOND=\count173
+\currenthour=\count174
+\currentminute=\count175
+\currentsecond=\count176
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count177
+\dayofyear=\count178
+\dayofweek=\count179
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks43
+\dt@b=\toks44
+)
+(./beamerthemem.sty
+Package: beamerthemem 2015/06/12 Metropolis Beamer theme
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2011/06/02 v2.1 LaTeX package options with pgfkeys
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
 )
-\pgfopts@list@add@a@toks=\toks43
-\pgfopts@list@add@b@toks=\toks44
+\pgfopts@list@add@a@toks=\toks45
+\pgfopts@list@add@b@toks=\toks46
 ) (./beamerinnerthememetropolis.sty
 Package: beamerinnerthememetropolis 2015/06/12 Metropolis inner theme
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count155
-\calc@Bcount=\count156
+\calc@Acount=\count180
+\calc@Bcount=\count181
 \calc@Adimen=\dimen188
 \calc@Bdimen=\dimen189
 \calc@Askip=\skip57
 \calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count157
+\calc@Ccount=\count182
 \calc@Cskip=\skip59
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
@@ -774,8 +828,8 @@ Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen192
 \pgffor@skip=\dimen193
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -784,7 +838,7 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count158
+\pgf@plot@mark@count=\count183
 \pgfplotmarksize=\dimen194
 )
 \tikz@lastx=\dimen195
@@ -797,19 +851,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikz@figbox@bg=\box55
 \tikz@tempbox=\box56
 \tikz@tempbox@bg=\box57
-\tikztreelevel=\count159
-\tikznumberofchildren=\count160
-\tikznumberofcurrentchild=\count161
-\tikz@fig@count=\count162
+\tikztreelevel=\count184
+\tikznumberofchildren=\count185
+\tikznumberofcurrentchild=\count186
+\tikz@fig@count=\count187
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count163
-\pgfmatrixcurrentcolumn=\count164
-\pgf@matrix@numberofcolumns=\count165
+\pgfmatrixcurrentrow=\count188
+\pgfmatrixcurrentcolumn=\count189
+\pgf@matrix@numberofcolumns=\count190
 )
-\tikz@expandcount=\count166
+\tikz@expandcount=\count191
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -841,12 +895,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen208
 \cmidrulekern=\dimen209
 \defaultaddspace=\dimen210
-\@cmidla=\count167
-\@cmidlb=\count168
+\@cmidla=\count192
+\@cmidlb=\count193
 \@aboverulesep=\dimen211
 \@belowrulesep=\dimen212
-\@thisruleclass=\count169
-\@lastruleclass=\count170
+\@thisruleclass=\count194
+\@lastruleclass=\count195
 \@thisrulewidth=\dimen213
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/ccicons/ccicons.sty
@@ -856,9 +910,9 @@ Package: ccicons 2013/04/16 v1.5 LaTeX support for Creative Commons icons
 Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks47
-\XKV@tempa@toks=\toks48
-\XKV@depth=\count171
+\XKV@toks=\toks49
+\XKV@tempa@toks=\toks50
+\XKV@depth=\count196
 File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
 )))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjustbox.sty
@@ -891,12 +945,12 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count172
+\c@checkoddpage=\count197
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box59
-\sift@deathcycles=\count173
+\sift@deathcycles=\count198
 \@vwid@loff=\dimen222
 \@vwid@roff=\dimen223
 ))
@@ -909,52 +963,50 @@ AB)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count174
+\lrq@indent=\count199
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\c@tabx@nest=\count175
-\c@listtotal=\count176
-\c@listcount=\count177
-\c@liststart=\count178
-\c@liststop=\count179
-\c@citecount=\count180
-\c@citetotal=\count181
-\c@multicitecount=\count182
-\c@multicitetotal=\count183
-\c@instcount=\count184
-\c@maxnames=\count185
-\c@minnames=\count186
-\c@maxitems=\count187
-\c@minitems=\count188
-\c@citecounter=\count189
-\c@savedcitecounter=\count190
-\c@uniquelist=\count191
-\c@uniquename=\count192
-\c@refsection=\count193
-\c@refsegment=\count194
-\c@maxextratitle=\count195
-\c@maxextratitleyear=\count196
-\c@maxextrayear=\count197
-\c@maxextraalpha=\count198
-\c@abbrvpenalty=\count199
-\c@highnamepenalty=\count200
-\c@lownamepenalty=\count201
-\c@maxparens=\count202
-\c@parenlevel=\count203
-\blx@tempcnta=\count204
-\blx@tempcntb=\count205
-\blx@tempcntc=\count206
-\blx@maxsection=\count207
-\blx@maxsegment@0=\count208
-\blx@notetype=\count209
-\blx@parenlevel@text=\count210
-\blx@parenlevel@foot=\count211
-\blx@sectionciteorder@0=\count212
+\c@tabx@nest=\count200
+\c@listtotal=\count201
+\c@listcount=\count202
+\c@liststart=\count203
+\c@liststop=\count204
+\c@citecount=\count205
+\c@citetotal=\count206
+\c@multicitecount=\count207
+\c@multicitetotal=\count208
+\c@instcount=\count209
+\c@maxnames=\count210
+\c@minnames=\count211
+\c@maxitems=\count212
+\c@minitems=\count213
+\c@citecounter=\count214
+\c@savedcitecounter=\count215
+\c@uniquelist=\count216
+\c@uniquename=\count217
+\c@refsection=\count218
+\c@refsegment=\count219
+\c@maxextratitle=\count220
+\c@maxextratitleyear=\count221
+\c@maxextrayear=\count222
+\c@maxextraalpha=\count223
+\c@abbrvpenalty=\count224
+\c@highnamepenalty=\count225
+\c@lownamepenalty=\count226
+\c@maxparens=\count227
+\c@parenlevel=\count228
+\blx@tempcnta=\count229
+\blx@tempcntb=\count230
+\blx@tempcntc=\count231
+\blx@maxsection=\count232
+\blx@maxsegment@0=\count233
+Normal \count register pool exhausted, switching to extended pool.
+\blx@notetype=\count277
+\blx@parenlevel@text=\count278
+\blx@parenlevel@foot=\count279
+\blx@sectionciteorder@0=\count280
 \labelnumberwidth=\skip64
 \labelalphawidth=\skip65
 \shorthandwidth=\skip66
@@ -966,82 +1018,81 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \bibhang=\skip72
 \blx@bcfin=\read2
 \blx@bcfout=\write5
-\c@mincomprange=\count213
-\c@maxcomprange=\count214
-\c@mincompwidth=\count215
+\c@mincomprange=\count281
+\c@maxcomprange=\count282
+\c@mincompwidth=\count283
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count216
-\c@savedafterword=\count217
-\c@annotator=\count218
-\c@savedannotator=\count219
-\c@author=\count220
-\c@savedauthor=\count221
-\c@bookauthor=\count222
-\c@savedbookauthor=\count223
-\c@commentator=\count224
-\c@savedcommentator=\count225
-\c@editor=\count226
-\c@savededitor=\count227
-\c@editora=\count228
-\c@savededitora=\count229
-\c@editorb=\count230
-\c@savededitorb=\count231
-\c@editorc=\count232
-\c@savededitorc=\count233
-Normal \count register pool exhausted, switching to extended pool.
-\c@foreword=\count277
-\c@savedforeword=\count278
-\c@holder=\count279
-\c@savedholder=\count280
-\c@introduction=\count281
-\c@savedintroduction=\count282
-\c@namea=\count283
-\c@savednamea=\count284
-\c@nameb=\count285
-\c@savednameb=\count286
-\c@namec=\count287
-\c@savednamec=\count288
-\c@shortauthor=\count289
-\c@savedshortauthor=\count290
-\c@shorteditor=\count291
-\c@savedshorteditor=\count292
-\c@translator=\count293
-\c@savedtranslator=\count294
-\c@labelname=\count295
-\c@savedlabelname=\count296
-\c@institution=\count297
-\c@savedinstitution=\count298
-\c@lista=\count299
-\c@savedlista=\count300
-\c@listb=\count301
-\c@savedlistb=\count302
-\c@listc=\count303
-\c@savedlistc=\count304
-\c@listd=\count305
-\c@savedlistd=\count306
-\c@liste=\count307
-\c@savedliste=\count308
-\c@listf=\count309
-\c@savedlistf=\count310
-\c@location=\count311
-\c@savedlocation=\count312
-\c@organization=\count313
-\c@savedorganization=\count314
-\c@origlocation=\count315
-\c@savedoriglocation=\count316
-\c@origpublisher=\count317
-\c@savedorigpublisher=\count318
-\c@publisher=\count319
-\c@savedpublisher=\count320
-\c@language=\count321
-\c@savedlanguage=\count322
-\c@pageref=\count323
-\c@savedpageref=\count324
+\c@afterword=\count284
+\c@savedafterword=\count285
+\c@annotator=\count286
+\c@savedannotator=\count287
+\c@author=\count288
+\c@savedauthor=\count289
+\c@bookauthor=\count290
+\c@savedbookauthor=\count291
+\c@commentator=\count292
+\c@savedcommentator=\count293
+\c@editor=\count294
+\c@savededitor=\count295
+\c@editora=\count296
+\c@savededitora=\count297
+\c@editorb=\count298
+\c@savededitorb=\count299
+\c@editorc=\count300
+\c@savededitorc=\count301
+\c@foreword=\count302
+\c@savedforeword=\count303
+\c@holder=\count304
+\c@savedholder=\count305
+\c@introduction=\count306
+\c@savedintroduction=\count307
+\c@namea=\count308
+\c@savednamea=\count309
+\c@nameb=\count310
+\c@savednameb=\count311
+\c@namec=\count312
+\c@savednamec=\count313
+\c@shortauthor=\count314
+\c@savedshortauthor=\count315
+\c@shorteditor=\count316
+\c@savedshorteditor=\count317
+\c@translator=\count318
+\c@savedtranslator=\count319
+\c@labelname=\count320
+\c@savedlabelname=\count321
+\c@institution=\count322
+\c@savedinstitution=\count323
+\c@lista=\count324
+\c@savedlista=\count325
+\c@listb=\count326
+\c@savedlistb=\count327
+\c@listc=\count328
+\c@savedlistc=\count329
+\c@listd=\count330
+\c@savedlistd=\count331
+\c@liste=\count332
+\c@savedliste=\count333
+\c@listf=\count334
+\c@savedlistf=\count335
+\c@location=\count336
+\c@savedlocation=\count337
+\c@organization=\count338
+\c@savedorganization=\count339
+\c@origlocation=\count340
+\c@savedoriglocation=\count341
+\c@origpublisher=\count342
+\c@savedorigpublisher=\count343
+\c@publisher=\count344
+\c@savedpublisher=\count345
+\c@language=\count346
+\c@savedlanguage=\count347
+\c@pageref=\count348
+\c@savedpageref=\count349
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1053,13 +1104,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count325
-\c@textcitetotal=\count326
-\c@textcitemaxnames=\count327
-\c@biburlnumpenalty=\count328
-\c@biburlucpenalty=\count329
-\c@biburllcpenalty=\count330
-\c@smartand=\count331
+\c@textcitecount=\count350
+\c@textcitetotal=\count351
+\c@textcitemaxnames=\count352
+\c@biburlnumpenalty=\count353
+\c@biburlucpenalty=\count354
+\c@biburllcpenalty=\count355
+\c@smartand=\count356
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1071,8 +1122,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count332
-\c@bbx:relatedtotal=\count333
+\c@bbx:relatedcount=\count357
+\c@bbx:relatedtotal=\count358
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1102,12 +1153,12 @@ File: biblatex.cfg
 Package: pgfplots 2014/02/28 v1.10 Data Visualization (1.10-2-gb39fe75)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks49
-\t@pgfplots@tokb=\toks50
-\t@pgfplots@tokc=\toks51
+\t@pgfplots@toka=\toks51
+\t@pgfplots@tokb=\toks52
+\t@pgfplots@tokc=\toks53
 \pgfplots@tmpa=\dimen224
-\c@pgfplots@coordindex=\count334
-\c@pgfplots@scanlineindex=\count335
+\c@pgfplots@coordindex=\count359
+\c@pgfplots@scanlineindex=\count360
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1125,14 +1176,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count336
+\c@pgfplotsarray@tmp=\count361
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count337
-\t@pgfplotstable@a=\toks52
+\c@pgfplotstable@counta=\count362
+\t@pgfplotstable@a=\toks54
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -1144,7 +1195,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count338
+\c@pgfplotslibrarysurf@no=\count363
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1179,7 +1230,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen227
 \pgfdecoratedinputsegmentremainingdistance=\dimen228
 \pgf@decorate@distancetomove=\dimen229
-\pgf@decorate@repeatstate=\count339
+\pgf@decorate@repeatstate=\count364
 \pgfdecorationsegmentamplitude=\dimen230
 \pgfdecorationsegmentlength=\dimen231
 )
@@ -1193,7 +1244,7 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count340
+\pgfplots@numplots=\count365
 \pgfplots@xmin@reg=\dimen232
 \pgfplots@xmax@reg=\dimen233
 Normal \dimen register pool exhausted, switching to extended pool.
@@ -1216,7 +1267,7 @@ ts.dateplot.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.
 tex
 File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count341
+\pgfcalendarcurrentjulian=\count366
 )))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.code.tex
@@ -1315,15 +1366,15 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
 (./config.tex (/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen261
 \WF@size=\dimen262
-\c@WF@wrappedlines=\count342
+\c@WF@wrappedlines=\count367
 \WF@box=\box81
-\WF@everypar=\toks53
+\WF@everypar=\toks55
 Package: wrapfig 2003/01/31  v 3.6
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen263
 \extrarowheight=\dimen264
-\NC@list=\toks54
+\NC@list=\toks56
 \extratabsurround=\skip73
 \backup@length=\skip74
 )
@@ -1341,25 +1392,25 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 Package biblatex Warning: Patching footnotes failed.
 (biblatex)                Footnote detection will not work.
 
-\@quotelevel=\count343
-\@quotereset=\count344
+\@quotelevel=\count368
+\@quotereset=\count369
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1397,17 +1448,17 @@ LaTeX Font Info:    ... okay on input line 50.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
+\scratchcounter=\count370
 \scratchdimen=\dimen265
 \scratchbox=\box82
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count348
+\nofMPsegments=\count371
+\nofMParguments=\count372
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count373
 \MPscratchDim=\dimen266
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks56
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
+\everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1425,7 +1476,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box83
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 52.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1433,68 +1484,68 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count351
+\c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
 
 (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 50.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 52.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 50.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 50.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 50.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 50.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 50.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 50.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 50.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 50.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 50.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 52.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 50.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 52.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 50.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 50.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 50.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 50.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 50.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 50.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 50.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 52.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 52.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 5
-0.
+2.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-50.
+52.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 50.
+ut line 52.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1520,7 +1571,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 50.
+LaTeX Info: Redefining \includegraphics on input line 52.
 Package biblatex Info: No input encoding detected.
 (biblatex)             Assuming 'ascii'.
 Package biblatex Info: Automatic encoding selection.
@@ -1531,23 +1582,23 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 50.
-Package biblatex Info: Reference segment=0 on input line 50.
+Package biblatex Info: Reference section=0 on input line 52.
+Package biblatex Info: Reference segment=0 on input line 52.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.10} (current compat level: 1.9).
 
 (./main.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 112.
+LaTeX Font Info:    Try loading font information for U+msa on input line 114.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 112.
+LaTeX Font Info:    Try loading font information for U+msb on input line 114.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 112.
+line 114.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1557,171 +1608,91 @@ thkerncmss.
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./problem.tex
-\openout4 = `main.vrb'.
-
- (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
+Overfull \vbox (13.79993pt too high) detected at line 116
  []
 
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+[2
+
+] (./problem.tex
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [][]  
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 73.
-
-[2
-
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
-
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
-[][]  
- []
+(Font)              size <5> substituted on input line 58.
 
 [3
 
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
-
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [][]  
  []
 
 [4
 
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
-
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [][]  
  []
 
 [5
 
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
-
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [][]  
  []
 
 [6
 
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
-
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [][]  
  []
 
 [7
 
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
-
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 58--58
 [][]  
  []
 
 [8
 
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
+]) (./problem_definition.tex
+\openout4 = `main.vrb'.
 
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+ (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 6--6
 [][]  
  []
 
 [9
 
-] (./main.vrb
-Overfull \hbox (24.6635pt too wide) in paragraph at lines 70--71
-[][]  
- []
+]) (./overview.tex
+\openout4 = `main.vrb'.
 
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 73--73
+ (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 27--27
 [][]  
  []
 
 [10
 
-]) (./problem_definition.tex
+]) (./example.tex
 \openout4 = `main.vrb'.
 
  (./main.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 4--4
+Overfull \hbox (0.4pt too wide) in paragraph at lines 6--6
 [][]  
  []
 
 [11
 
-])
-Overfull \vbox (13.79993pt too high) detected at line 117
- []
-
-[12
-
-] (./use_cases.tex
-\openout4 = `main.vrb'.
-
- (./main.vrb
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 3.
-LaTeX Font Info:    No file OMScmss.fd. on input line 3.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 3.
-
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 10--10
-[][]  
- []
-
-[13
-
-] (./main.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 10--10
-[][]  
- []
-
-[14
-
-] (./main.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 10--10
-[][]  
- []
-
-[15
-
-]) [16
+]) [12
 
 ] (./version_control.tex
 \openout4 = `main.vrb'.
@@ -1731,147 +1702,58 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
 [][]  
  []
 
+[13
+
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
+[][]  
+ []
+
+[14
+
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
+[][]  
+ []
+
+[15
+
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
+[][]  
+ []
+
+[16
+
+] (./main.vrb)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
+[][]  
+ []
+
 [17
-
-] (./main.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
-[][]  
- []
-
-[18
-
-] (./main.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
-[][]  
- []
-
-[19
-
-] (./main.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
-[][]  
- []
-
-[20
-
-] (./main.vrb)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
-[][]  
- []
-
-[21
 
 ]) (./path_copying.tex
 Overfull \hbox (0.4pt too wide) in paragraph at lines 52--52
 [][]  
  []
 
-[22
+[18
 
 ]
 Overfull \hbox (0.4pt too wide) in paragraph at lines 52--52
 [][]  
  []
 
-[23
+[19
 
 ]
 Overfull \hbox (0.4pt too wide) in paragraph at lines 52--52
 [][]  
  []
 
-[24
+[20
 
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 52--52
-[][]  
- []
-
-[25
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 52--52
-[][]  
- []
-
-[26
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 52--52
-[][]  
- []
-
-[27
-
-]) (./hamt.tex
-\openout4 = `main.vrb'.
-
- (./main.vrb
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
-[][]  
- []
-
-[28
-
-] (./main.vrb
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
-[][]  
- []
-
-[29
-
-] (./main.vrb
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
-[][]  
- []
-
-[30
-
-] (./main.vrb
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
-[][]  
- []
-
-[31
-
-] (./main.vrb
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 202--202
-[][]  
- []
-
-[32
-
-]) [33
+]) [21
 
 ] (./architecture_overview.tex
 \openout4 = `main.vrb'.
@@ -1892,7 +1774,7 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 54--54
 [][]  
  []
 
-[34
+[22
 
 ] (./main.vrb
 Missing character: There is no ; in font nullfont!
@@ -1910,37 +1792,49 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 54--54
 [][]  
  []
 
-[35
+[23
 
-]) (./browser_application.tex
+])
 \openout4 = `main.vrb'.
 
- (./main.vrb
-Missing character: There is no ; in font nullfont!
+ (./main.vrb <images/workspace.png, id=170, 1201.48875pt x 677.53125pt>
+File: images/workspace.png Graphic file (type png)
+
+<use images/workspace.png>
+Package pdftex.def Info: images/workspace.png used on input line 4.
+(pdftex.def)             Requested size: 144.4266pt x 81.43463pt.
+ <images/map.png, id=171, 1443.3925pt x 762.85pt>
+File: images/map.png Graphic file (type png)
+
+<use images/map.png>
+Package pdftex.def Info: images/map.png used on input line 5.
+(pdftex.def)             Requested size: 144.4266pt x 76.32439pt.
+ <images/graph.png, id=173, 1445.4pt x 757.83125pt>
+File: images/graph.png Graphic file (type png)
+
+<use images/graph.png>
+Package pdftex.def Info: images/graph.png used on input line 6.
+(pdftex.def)             Requested size: 144.4266pt x 75.71817pt.
+ <images/edit.png, id=174, 1443.3925pt x 759.83875pt>
+File: images/edit.png Graphic file (type png)
+
+<use images/edit.png>
+Package pdftex.def Info: images/edit.png used on input line 7.
+(pdftex.def)             Requested size: 144.4266pt x 76.0231pt.
 )
-Overfull \hbox (0.4pt too wide) in paragraph at lines 34--34
+Overfull \hbox (5.56334pt too wide) in paragraph at lines 3--141
 [][]  
  []
 
-[36
 
-]) (./language_binding.tex
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<images/java.jpg, id=235, 1284.8pt x 770.88pt>
-File: images/java.jpg Graphic file (type jpg)
- <use images/java.jpg>
-Package pdftex.def Info: images/java.jpg used on input line 4.
-(pdftex.def)             Requested size: 153.64493pt x 92.184pt.
-)
-Overfull \hbox (0.4pt too wide) in paragraph at lines 8--8
+Overfull \hbox (0.4pt too wide) in paragraph at lines 141--141
 [][]  
  []
 
-[37
+[24
 
- <./images/java.jpg>]) (./back_end.tex
+ <./images/workspace.png (PNG copy)> <./images/map.png> <./images/graph.png> <.
+/images/edit.png>] (./back_end.tex
 \openout4 = `main.vrb'.
 
  (./main.vrb
@@ -1948,58 +1842,141 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-<images/leveldb.png, id=242, 240.9pt x 240.9pt>
+<images/nodejs.png, id=183, 1284.8pt x 642.4pt>
+File: images/nodejs.png Graphic file (type png)
+ <use images/nodejs.png>
+Package pdftex.def Info: images/nodejs.png used on input line 69.
+(pdftex.def)             Requested size: 92.1879pt x 46.09004pt.
+
+<images/leveldb.png, id=184, 240.9pt x 240.9pt>
 File: images/leveldb.png Graphic file (type png)
  <use images/leveldb.png>
-Package pdftex.def Info: images/leveldb.png used on input line 67.
-(pdftex.def)             Requested size: 36.87328pt x 36.87227pt.
+Package pdftex.def Info: images/leveldb.png used on input line 69.
+(pdftex.def)             Requested size: 61.45703pt x 61.45625pt.
 
-<images/mongodb.png, id=244, 301.125pt x 250.9375pt>
+<images/mongodb.png, id=185, 301.125pt x 250.9375pt>
 File: images/mongodb.png Graphic file (type png)
  <use images/mongodb.png>
-Package pdftex.def Info: images/mongodb.png used on input line 67.
-(pdftex.def)             Requested size: 46.0916pt x 38.40862pt.
+Package pdftex.def Info: images/mongodb.png used on input line 69.
+(pdftex.def)             Requested size: 61.45703pt x 51.21277pt.
 )
-Overfull \hbox (6.68123pt too wide) in paragraph at lines 68--70
+Overfull \hbox (6.68123pt too wide) in paragraph at lines 70--72
 [][]  
  []
 
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 70--70
+Overfull \hbox (0.4pt too wide) in paragraph at lines 72--72
 [][]  
  []
 
-[38
+[25
 
- <./images/leveldb.png> <./images/mongodb.png>]) (./versioned_trie.tex
+ <./images/nodejs.png> <./images/leveldb.png> <./images/mongodb.png>])
+(./versioned_trie.tex
 \openout4 = `main.vrb'.
 
+ (./main.vrb
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 4.
+LaTeX Font Info:    No file OMScmss.fd. on input line 4.
 
-(./main.vrb)
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 4.
+
+)
 Overfull \hbox (0.4pt too wide) in paragraph at lines 11--11
 [][]  
  []
 
-[39
+[26
 
-]) [40
+]) (./hamt.tex
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 216--216
+[][]  
+ []
+
+[27
+
+] (./main.vrb
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 216--216
+[][]  
+ []
+
+[28
+
+] (./main.vrb
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 216--216
+[][]  
+ []
+
+[29
+
+] (./main.vrb
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 216--216
+[][]  
+ []
+
+[30
+
+] (./main.vrb
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 216--216
+[][]  
+ []
+
+[31
+
+]) [32
 
 ] (./evaluation.tex
 \openout4 = `main.vrb'.
 
  (./main.vrb
 Package epstopdf Info: Source file: <images/chart.eps>
-(epstopdf)                    date: 2015-11-21 15:02:48
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 22472 bytes
 (epstopdf)             Output file: <images/chart-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-11-21 18:14:42
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 8071 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/chart-eps-converted
 -to.pdf images/chart.eps>
 (epstopdf)             \includegraphics on input line 4.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/chart-eps-converted-to.pdf, id=263, 361.35pt x 252.945pt>
+<images/chart-eps-converted-to.pdf, id=235, 361.35pt x 252.945pt>
 File: images/chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/chart-eps-converted-to.pdf>
@@ -2011,7 +1988,7 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 15--15
 [][]  
  []
 
-[41
+[33
 
  <./images/chart-eps-converted-to.pdf>]) (./speed.tex
 \openout4 = `main.vrb'.
@@ -2021,25 +1998,25 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 12--12
 [][]  
  []
 
-[42
+[34
 
 ]) (./dat_comparison.tex
 \openout4 = `main.vrb'.
 
  (./main.vrb
 Package epstopdf Info: Source file: <images/same_key_diff_versions.eps>
-(epstopdf)                    date: 2015-11-21 18:38:41
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 25776 bytes
 (epstopdf)             Output file: <images/same_key_diff_versions-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2015-11-21 18:38:56
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 9687 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/same_key_diff_versi
 ons-eps-converted-to.pdf images/same_key_diff_versions.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/same_key_diff_versions-eps-converted-to.pdf, id=281, 361.35pt x 252.945
+<images/same_key_diff_versions-eps-converted-to.pdf, id=252, 361.35pt x 252.945
 pt>
 File: images/same_key_diff_versions-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2048,17 +2025,17 @@ Package pdftex.def Info: images/same_key_diff_versions-eps-converted-to.pdf use
 d on input line 3.
 (pdftex.def)             Requested size: 153.64493pt x 107.5523pt.
 Package epstopdf Info: Source file: <images/kvpair.eps>
-(epstopdf)                    date: 2015-11-21 18:38:41
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 26061 bytes
 (epstopdf)             Output file: <images/kvpair-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-11-21 18:38:52
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 10028 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/kvpair-eps-converte
 d-to.pdf images/kvpair.eps>
 (epstopdf)             \includegraphics on input line 4.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/kvpair-eps-converted-to.pdf, id=282, 361.35pt x 252.945pt>
+<images/kvpair-eps-converted-to.pdf, id=253, 361.35pt x 252.945pt>
 File: images/kvpair-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/kvpair-eps-converted-to.pdf>
@@ -2066,11 +2043,11 @@ Package pdftex.def Info: images/kvpair-eps-converted-to.pdf used on input line
 4.
 (pdftex.def)             Requested size: 153.64493pt x 107.5523pt.
 )
-Overfull \hbox (0.4pt too wide) in paragraph at lines 7--7
+Overfull \hbox (0.4pt too wide) in paragraph at lines 9--9
 [][]  
  []
 
-[43
+[35
 
  <./images/same_key_diff_versions-eps-converted-to.pdf> <./images/kvpair-eps-co
 nverted-to.pdf>]
@@ -2078,17 +2055,17 @@ nverted-to.pdf>]
 
  (./main.vrb
 Package epstopdf Info: Source file: <images/samver.eps>
-(epstopdf)                    date: 2015-11-21 18:38:41
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 25957 bytes
 (epstopdf)             Output file: <images/samver-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-11-21 18:38:54
+(epstopdf)                    date: 2016-04-06 17:44:38
 (epstopdf)                    size: 9970 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/samver-eps-converte
 d-to.pdf images/samver.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/samver-eps-converted-to.pdf, id=300, 361.35pt x 252.945pt>
+<images/samver-eps-converted-to.pdf, id=270, 361.35pt x 252.945pt>
 File: images/samver-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/samver-eps-converted-to.pdf>
@@ -2096,25 +2073,25 @@ Package pdftex.def Info: images/samver-eps-converted-to.pdf used on input line
 3.
 (pdftex.def)             Requested size: 153.64493pt x 107.5523pt.
 )
-Overfull \hbox (0.4pt too wide) in paragraph at lines 14--14
+Overfull \hbox (0.4pt too wide) in paragraph at lines 18--18
 [][]  
  []
 
-[44
+[36
 
- <./images/samver-eps-converted-to.pdf>]) [45
+ <./images/samver-eps-converted-to.pdf>]) [37
 
 ] (./conclusion.tex)
 
-LaTeX Warning: Empty bibliography on input line 155.
+LaTeX Warning: Empty bibliography on input line 158.
 
-<images/panda_logo.png, id=317, 361.35pt x 333.245pt>
+<images/panda_logo.png, id=289, 361.35pt x 333.245pt>
 File: images/panda_logo.png Graphic file (type png)
 
 <use images/panda_logo.png>
-Package pdftex.def Info: images/panda_logo.png used on input line 161.
+Package pdftex.def Info: images/panda_logo.png used on input line 164.
 (pdftex.def)             Requested size: 122.91406pt x 113.35265pt.
- [46
+ [38
 
  <./images/panda_logo.png>]
 \tf@nav=\write7
@@ -2126,11 +2103,11 @@ Package pdftex.def Info: images/panda_logo.png used on input line 161.
 \tf@snm=\write9
 \openout9 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C5BC926C4EC503D9C6C9774C9DFD1287;221.
 
@@ -2144,14 +2121,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 37979 strings out of 493117
- 879402 string characters out of 6135433
- 1380150 words of memory out of 5000000
- 40464 multiletter control sequences out of 15000+600000
- 9666 words of font info for 35 fonts, out of 8000000 for 9000
+ 38488 strings out of 493117
+ 886972 string characters out of 6135433
+ 1391553 words of memory out of 5000000
+ 40965 multiletter control sequences out of 15000+600000
+ 10364 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,16n,95p,1808b,1455s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -2159,16 +2136,17 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (46 pages, 364094 bytes).
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on main.pdf (38 pages, 541914 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 303 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

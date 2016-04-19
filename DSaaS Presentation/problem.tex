@@ -23,47 +23,32 @@
     \pause
 
     \node(copy-a) [below right = 0cm and 1cm of ver_A] {\file{V}{secondary}};
+    \node(ver_E) [above right= 0cm and 1cm of ver_A] {\file{E}{primary_dark}};
+    \draw[->] (ver_A) -- (ver_E);
     \draw[->] (ver_A) -- (copy-a);
 
     \pause
 
-    \node(ver_B) [right = 1cm of ver_A]  {\file{B}{primary_dark}};
-    \draw[->] (ver_A) -- (ver_B);
-
-    \pause
-
-    \node(ver_C) [right = 0cm of ver_B]  {\file{C}{primary_dark}};
     \node(copy-b) [right = 0cm of copy-a] {\file{W}{secondary}};
-
-    \pause
-
-    \node(ver_E) [above right= 0cm and 1cm of ver_A] {\file{E}{primary_dark}};
-    \draw[->] (ver_A) -- (ver_E);
-
-    \node(copy-c) [right = 0cm of copy-b] {\file{X}{secondary}};
-
-    \pause
-
     \node(ver_F) [right = 0cm of ver_E]  {\file{F}{primary_dark}};
 
     \pause
 
+
+    \node(copy-c) [right = 0cm of copy-b] {\file{X}{secondary}};
+    \pause
     \node(ver_G) [right = 0cm of ver_F]  {\file{G}{primary_dark}};
 
     \pause
 
-    \node(ver_H) [right = 0cm of ver_G]  {\file{H}{primary_dark}};
-
-    \pause
-
-    \node(ver_last) [right = 1cm of ver_H] {\file{L}{primary_dark}};
+    \node(ver_last) [right = 1cm of ver_G] {\file{L}{primary_dark}};
 
 
     \node(copy-last) [right = 1cm of copy-c] {\file{Z}{secondary}};
     \draw[dashed,->,color=secondary](copy-c) -- (copy-last);
 
-    \draw[dashed,->] (ver_H) -- (ver_last);
-    \node(question) [right = 6cm of ver_B] {\huge ?};
+    \draw[dashed,->] (ver_G) -- (ver_last);
+    \node(question) [right = 7cm of ver_A] {\huge ?};
     \draw[->] (ver_last) -- (question);
     \draw[->,color=secondary] (copy-last) -- (question);
 

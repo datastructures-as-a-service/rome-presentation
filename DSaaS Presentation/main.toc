@@ -4,10 +4,10 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{DSaaS}{1}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Background}{16}{0}{2}
+\beamer@sectionintoc {2}{Background}{12}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Development}{33}{0}{3}
+\beamer@sectionintoc {3}{Development}{21}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Evaluation}{40}{0}{4}
+\beamer@sectionintoc {4}{Evaluation}{32}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Conclusion}{45}{0}{5}
+\beamer@sectionintoc {5}{Conclusion}{37}{0}{5}

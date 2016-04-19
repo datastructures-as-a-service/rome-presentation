@@ -1,5 +1,5 @@
 \begin{frame}[fragile]
-	\frametitle{Hashed Array Mapped Trie (HAMT)}
+	\frametitle{Hash Array Mapped Trie (HAMT)}
 
 	\newcommand{\hl}[2]{\color<#1>{accentcolor}#2\color{primary}}
 
@@ -30,9 +30,9 @@
 	% 			\node (level0) at (0,0) {};
 
 	% 			\node<1>(level0_2) [left=0cm of level0, arr] {Array Of Pointers};
-	% 			% \node (level0_4) [right=0cm of level0_2, arr] {};
+	% 			% \node (l0_4) [right=0cm of level0_2, arr] {};
 	% 			\node<1>(bitmap0) [left=0cm of level0_2, bmp] {Bitmap};
-	% 			% \node (ext_1) [right=0cm of level0_4]{\ldots};
+	% 			% \node (ext_1) [right=0cm of l0_4]{\ldots};
 	% 			\onslide<1>{\node (rootLabel) [above left=0cm and -0.48cm of level0_2] {Node};}
 	% 			\node<1>(pointOfBitmap)[below=0cm of level0_2]{\begin{varwidth}{6cm}
 	% 			The bitmap indicates the presence, and is used to determine the position, of a pointer within the pointer array.
@@ -76,10 +76,10 @@
 	% 			\pause
 
 	% 			\node<5->(bitmap0) [left=0cm of level0_2, bmp] {\ldots 0110};
-	% 			\node (level0_4) [right=0cm of level0_2, arr] {$\cdot$};
+	% 			\node (l0_4) [right=0cm of level0_2, arr] {$\cdot$};
 
-	% 			\node (package1) [right=0.5cm of level0_4]{A};
-	% 			\draw[->] (level0_4) -- (package1);
+	% 			\node (package1) [right=0.5cm of l0_4]{A};
+	% 			\draw[->] (l0_4) -- (package1);
 
 	% 			\onslide<5-6>{
 	% 				\node (package2) [below=0.5cm of level0_2]{B};
@@ -111,7 +111,7 @@
 	% 			\onslide<9>{\node (package3) [below=0.5cm of level1_C]{C};}
 
 
-	% 			\draw[->] (level0_4) -- (package1);
+	% 			\draw[->] (l0_4) -- (package1);
 
 	% 			\onslide<9>{\draw[->] (level1_C) -- (package3);}
 
@@ -148,13 +148,12 @@
 
 	    \begin{scope}[>=stealth]
 	      \node (level0) at (0,0) {};
-	      \node (level0_2) [left=0cm of level0, arr] {};
-	      \node (level0_4) [right=0cm of level0_2, arr] {};
+	      \node<1-2>(level0_2) [left=0cm of level0, arr] {};
 	      \node<1-2>(bitmap0) [left=0cm of level0_2, bmp] {\ldots000000};
 
 	      % \node (rootLabel) [above=0.5cm of level0_2] {Root Node};
 	      \node (bitmapLabel)[above=0cm of bitmap0] {Bitmap};
-	      \node (refArrayLabel) [right=0cm of level0_4]{Reference Array};
+	      \node <1-2>(refArrayLabel) [right=0cm of level0_2]{Reference Array};
 
 	      \pause
 
@@ -163,14 +162,25 @@
 	      \pause
 
 	      \node<3>(bitmap0) [left=0cm of level0_2, bmp] {\ldots000001};
+	      \node<3->(level0_2) [left=0cm of level0, arr] {};
+	      \node [above=0cm of level0_2] {0};
 
 	      \node (package1) [below left=0.2cm of level0_2]{$(k_{1}, v_{1})$};
 	      \draw[->] (level0_2.south) -- (package1);
+	      \node<3>(l0_4) [right=0cm of level0_2, arr] {};
+	      \node<3>[above=0cm of l0_4] {\ldots};
+	      \node<3>(refArrayLabel) [right=0cm of l0_4]{Reference Array};
 
 	      \pause
 
+	      \node<4->(level0_4) [right=0cm of level0_2, arr] {};
+	      \node<4->(level0_6) [right=0cm of level0_4, arr] {};
+	      \node<4->[above=0cm of level0_4]{1};
+	      \node<4->[above=0cm of level0_6]{\ldots};
+	      \node<4->(refArrayLabel) [right=0cm of level0_6]{Reference Array};
+
 	      \node (bitmap0) [left=0cm of level0_2, bmp] {\ldots001001};
-	      \node<4>(package2) [below right=0.2cm of level0_4]{$(k_{2}, v_{2})$};
+	      \node<4>(package2) [below right=0.1cm and 0cm of level0_4]{$(k_{2}, v_{2})$};
 	      \draw<4>[->] (level0_4.south) -- (package2.north);
 	      \node (hashkey2) [below=0cm of hashkey1]{$h(k_{2}) = 00011$ $00011\ldots$};
 
@@ -181,11 +191,15 @@
 
 	      \node (level1) at (2, -1) {};
 	      \node (level1_0) [left=0cm of level1, arr] {};
+	      \node [above=0cm of level1_0]{0};
 	      \node (level1_5) [right=0cm of level1_0, arr] {};
+	      \node [above=0cm of level1_5]{1};
+	      \node (level1_6) [right=0cm of level1_5, arr] {};
+	      \node [above=0cm of level1_6]{\ldots};
+
 	      % \node<2>(bitmap1) [left=0cm of level1_0, bmp] {\ldots000000};
 	      \node (bitmap1) [left=0cm of level1_0, bmp] {\ldots101000};
-
-	      \draw[->] (level0_4) -- (level0_4 |- bitmap1.north);
+	      \draw<5->[->] (level0_4) -- (level0_4 |- bitmap1.north);
 
 	      \node (package2) [below left=0.2cm of level1_0]{$(k_{2}, v_{2})$};
 	      \node (package3) [below right=0.2cm of level1_5]{$(k_{3}, v_{3})$};
@@ -195,8 +209,8 @@
 
 	    \end{scope}
 	    \end{tikzpicture}
-	  \caption{An example of an HAMT\@. The grey blocks represent the bitmaps, and the white cells represent the array of references to key--value pairs stored in this trie.}
 	  %, and the key--value pairs stored by this trie are \todo{represented as the alphabet characters}.}
 	  \label{fig:hamt-diagram-path-copying}
 	\end{figure}
+	An example of an HAMT\@. The white cells represent the array of references to key--value pairs stored in this trie.
 \end{frame}

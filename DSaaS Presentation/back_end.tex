@@ -9,17 +9,19 @@
 
       \begin{scope}[>=stealth]
         \node (serverContainer) at (0,0) [draw, rectangle, minimum height=6.5cm, minimum width=7.2cm]{};
-        \node [above=-0.7cm of serverContainer]{API Service (NodeJS)};
+        \node (apiService) [above=-0.7cm of serverContainer]{API Service (NodeJS)};
+        \node (nodejs) [above=0cm of apiService]{\includegraphics[width=0.3\textwidth]{images/nodejs.png}};
+
 
         \node (db1) [right=0.4cm of serverContainer, db]{};
         \node (db1description) [above=-1cm of db1]{Key-Value};
         \node (db1description2) [below=0cm of db1description]{Database};
-        \node (db1logo) [above=0cm of db1]{\includegraphics[width=0.12\textwidth]{images/leveldb.png}};
+        \node (db1logo) [above=0cm of db1]{\includegraphics[width=0.2\textwidth]{images/leveldb.png}};
 
         \node (db2) [left=0.4cm of serverContainer, db]{};
         \node (db2description) [above=-1cm of db2]{Document};
         \node (db2description2) [below=0cm of db2description]{Database};
-        \node (db2logo) [above=0cm of db2]{\includegraphics[width=0.15\textwidth]{images/mongodb.png}};
+        \node (db2logo) [above=0cm of db2]{\includegraphics[width=0.2\textwidth]{images/mongodb.png}};
 
 
         \node (c) [above=-3.6cm of serverContainer]{};

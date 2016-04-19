@@ -1,4 +1,6 @@
 \frametitle{Compared to Dat}
   \begin{center}
    \includegraphics[width=0.5\textwidth]{images/samver.eps}
+    \\
+    Dat is available at \url{http://dat-data.com/}
   \end{center}

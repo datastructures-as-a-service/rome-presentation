@@ -1,10 +1,36 @@
 \begin{frame}[fragile]
   \frametitle{Other Use Cases}
+  \newcommand{\file}[2]{%
+        \begin{tikzpicture}
+            \begin{scope}[>=stealth]
+                \node (center) at (0,0){};
+                \draw[color=#2] (center) -- ++(0,1) -- ++(0.6,0) -- ++(0.2,-0.2) -- ++(0,-0.8) -- (center);
+                \coordinate (s) at ($(center) + (0,1) + (0.6,0)$);
+                \coordinate (c) at ($(center) + (0.4,0.4)$);
+                \draw[color=#2] (s) -- ++(0,-0.2) -- ++(0.2,0);
+                \node (text) at (0,0) [fill=white] {\color{#2}#1};
+            \end{scope}
+        \end{tikzpicture}
+    }
+  % \onslide<1>{
+  %   \begin{tikzpicture}
+  %     \begin{scope}[>=stealth]
+  %       \node(start) at (0,0) { \file{Initial}{primary_dark} };
+  %       \node(interm) [right=0.2cm of start]{ \file{Intermediate}{primary_dark} };
+  %       \node(final) [right=0.2cm of interm]{ \file{Final}{primary_dark} };
+
+  %       \draw[->,color=primary_dark] (start) -- (interm);
+  %       \draw[->,color=primary_dark] (interm) -- (final);
+  %     \end{scope}
+  %   \end{tikzpicture}
+  % }
   \begin{itemize}
     \item Scientific Reproducibility
+
     \pause
     \item Debugging and Teaching Programming
     \pause
     \item Session-based Interpreters
   \end{itemize}
+
 \end{frame}
