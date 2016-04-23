@@ -20,11 +20,11 @@
 		\node (b2) at (1.5,-2) [circle,draw]{$c$};
 		\node (d2) at (0.5, -2) [circle,draw]{$a$};
 		\node<1,2->(r2) at (2,0) [rectangle,draw]{$v_{1}$};
-		\node<1,2->(c2) at (3,-1) [circle,draw]{$d$};
-		\node(e2) at (2.5, -2) [circle,draw]{$e$};
+		\node<1,2->(c2) at (3,-1) [circle,draw]{$e$};
+		\node(e2) at (2.5, -2) [circle,draw]{$d$};
 
 		\node<2>(r2) at (2,0) [rectangle,draw, hl]{$v_{1}$};
-		\node<2>(c2) at (3,-1) [circle,draw, hl]{$d$};
+		\node<2>(c2) at (3,-1) [circle,draw, hl]{$e$};
 
 		\draw[->] (r2) -- (a2);
 		\draw[->] (a2) -- (b2);
@@ -37,7 +37,7 @@
 		\visible<2->{\node(f) at (4.5, -2) [nn]{$f$};}
 		\draw<2>[->, hl] (c2) -- (f);
 
-		\visible<3->{\node(c3) at (4, -1) [nn]{$d'$};}
+		\visible<3->{\node(c3) at (4, -1) [nn]{$e'$};}
 		\draw<3->[->, hl] (c3) -- (f);
 		\draw<3->[->, hl] (c3) -- (e2);
 		% \draw<3>[->, hl] (r2) -- (c3);

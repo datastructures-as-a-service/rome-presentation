@@ -22,10 +22,11 @@
 
     \pause
 
-    \node(copy-a) [below right = 0cm and 1cm of ver_A] {\file{V}{secondary}};
-    \node(ver_E) [above right= 0cm and 1cm of ver_A] {\file{E}{primary_dark}};
-    \draw[->] (ver_A) -- (ver_E);
+    \node(copy-a) [below right = 0cm and 0.5cm of ver_A] {\file{V}{secondary}};
     \draw[->] (ver_A) -- (copy-a);
+    \pause
+    \node(ver_E) [above right= 0cm and 0.5cm of ver_A] {\file{E}{primary_dark}};
+    \draw[->] (ver_A) -- (ver_E);
 
     \pause
 
@@ -48,7 +49,7 @@
     \draw[dashed,->,color=secondary](copy-c) -- (copy-last);
 
     \draw[dashed,->] (ver_G) -- (ver_last);
-    \node(question) [right = 7cm of ver_A] {\huge ?};
+    \node(question) [right = 7.2cm of ver_A] {\huge ?};
     \draw[->] (ver_last) -- (question);
     \draw[->,color=secondary] (copy-last) -- (question);
 
